@@ -41,9 +41,10 @@ __all__ = [
     "PackageType",
     "InvalidVersionError",
 ]
-__version__ = "0.1.0"
-
 import types
+from importlib.metadata import version as _version
+
+__version__ = _version("univercmp")
 
 from univercmp import apk, deb, rpm, semver
 from univercmp._exceptions import InvalidVersionError
