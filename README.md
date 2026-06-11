@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/Limozacloud/univercmp/actions/workflows/ci.yml/badge.svg)](https://github.com/Limozacloud/univercmp/actions/workflows/ci.yml)
 [![License](https://img.shields.io/github/license/Limozacloud/univercmp)](LICENSE)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Limozacloud/univercmp/main?filepath=demo.ipynb)
 
 Cross-platform package version comparison for **APK**, **DEB**, **RPM** and **SemVer** ecosystems.
 
