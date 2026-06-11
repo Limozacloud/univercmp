@@ -1,0 +1,14 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "python",
+      "package-name": "univercmp",
+      "extra-files": [
+        {
+          "type": "python",
+          "path": "univercmp/__init__.py"
+        }
+      ]
+    }
+  }
+}
