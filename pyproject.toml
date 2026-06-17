@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "univercmp"
-version = "0.2.0"
+version = "0.3.0"
 description = "Cross-platform package version comparison for APK, DEB and RPM ecosystems"
 readme = "README.md"
 license = { text = "MIT" }
