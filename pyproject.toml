@@ -9,7 +9,8 @@ description = "Cross-platform package version comparison for APK, DEB and RPM ec
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.10"
-keywords = ["package", "version", "compare", "apk", "deb", "rpm", "alpine", "debian", "redhat"]
+dependencies = ["packaging>=22.0"]
+keywords = ["package", "version", "compare", "apk", "deb", "rpm", "pep440", "alpine", "debian", "redhat", "pypi"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

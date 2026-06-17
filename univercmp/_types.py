@@ -10,3 +10,4 @@ class PackageType(str, Enum):
     DEB = "deb"
     RPM = "rpm"
     SEMVER = "semver"
+    PEP440 = "pep440"

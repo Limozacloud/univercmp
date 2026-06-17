@@ -3,11 +3,13 @@ univercmp — cross-platform package version comparison.
 
 Supported ecosystems
 --------------------
-+-----------------+--------------------------------------------+
-| PackageType.APK | Alpine Linux (apk-tools)                   |
-| PackageType.DEB | Debian / Ubuntu (dpkg)                     |
-| PackageType.RPM | RHEL, AlmaLinux, Rocky, CentOS, SLES, …   |
-+-----------------+--------------------------------------------+
++--------------------+--------------------------------------------+
+| PackageType.APK    | Alpine Linux (apk-tools)                   |
+| PackageType.DEB    | Debian / Ubuntu (dpkg)                     |
+| PackageType.RPM    | RHEL, AlmaLinux, Rocky, CentOS, SLES, …   |
+| PackageType.SEMVER | Semantic Versioning 2.0.0                  |
+| PackageType.PEP440 | Python packages (PyPI, pip)                |
++--------------------+--------------------------------------------+
 
 Quick start
 -----------
@@ -46,7 +48,7 @@ from importlib.metadata import version as _version
 
 __version__ = _version("univercmp")
 
-from univercmp import apk, deb, rpm, semver
+from univercmp import apk, deb, pep440, rpm, semver
 from univercmp._exceptions import InvalidVersionError
 from univercmp._result import CompareResult
 from univercmp._types import PackageType
@@ -62,6 +64,8 @@ def _backend(kind: PackageType | str) -> types.ModuleType:
             return rpm
         case PackageType.SEMVER:
             return semver
+        case PackageType.PEP440:
+            return pep440
 
 
 def compare(src: str, dst: str, *, kind: PackageType | str) -> CompareResult:
