@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/github/license/Limozacloud/univercmp)](LICENSE)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Limozacloud/univercmp/main?filepath=demo.ipynb)
 
-Cross-platform package version comparison for **APK**, **DEB**, **RPM** and **SemVer** ecosystems.
+Cross-platform package version comparison for **APK**, **DEB**, **RPM**, **SemVer** and **PEP 440** ecosystems.
 
 ## Installation
 
@@ -65,6 +65,7 @@ univercmp validate 1.0_foo --type apk   # exit 1
 | `deb`    | Debian, Ubuntu (dpkg)                                | [deb-version(5)](https://manpages.debian.org/deb-version.5) |
 | `rpm`    | RHEL, AlmaLinux, Rocky Linux, CentOS, SLES, openSUSE | RPM NEVRA spec |
 | `semver` | Any project following Semantic Versioning            | [semver.org](https://semver.org/) |
+| `pep440` | Python packages (PyPI, pip)                          | [PEP 440](https://peps.python.org/pep-0440/) |
 
 ## License
 
